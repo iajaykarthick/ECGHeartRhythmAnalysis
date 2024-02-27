@@ -162,8 +162,11 @@ class ECGPreprocessor(BaseEstimator, TransformerMixin):
             ])
 
             segmented_ecg = pipeline.fit_transform(ecg)
-            data_dict['segmented_ecg'] = segmented_ecg
-            processed_data.append(data_dict)
+            
+            for segment in segmented_ecg:
+                processed_data_dict = data_dict.copy()
+                processed_data_dict['ecg_signal'] = segment
+                processed_data.append(processed_data_dict)
 
         return processed_data
 
