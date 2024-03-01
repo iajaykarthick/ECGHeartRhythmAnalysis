@@ -1,4 +1,4 @@
-# ECG Heart Rhythm Classification ❤️📈
+# ECG Heart Rhythm Classification 💓📈
 
 ## Project Overview 🌟
 This project is designed to leverage machine learning for the classification of heart rhythms from electrocardiogram (ECG) data, with an emphasis on identifying Atrial Fibrillation, normal rhythms, other arrhythmias, and noisy signals. It incorporates advanced data processing and machine learning techniques to enhance the accuracy of ECG analysis.
